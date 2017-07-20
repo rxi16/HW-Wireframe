@@ -1,60 +1,101 @@
 * {
 	box-sizing: content-box;
-	margin: 0;
-	color: #ebebeb;
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
 	font-size: 18px;
 }
-body {
-	background: #777;
+html, body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background: url("http://images.naldzgraphics.net/2012/04/1-dark-aloha.jpg");
 	width: 960px;
+	margin: 0 10%;
+	height: 100%;
 }
 header {
-	margin: 0 15%;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	color: #ebebeb;
 	text-align: center;
-	background: yellow;
+	background: teal;
 	padding: 20px;
 }
 nav {
-	margin: 0 15%;
-	background: purple;
+	background: #ffffff;
 	padding: 20px;
 	text-align: center;
 }
 section {
-	margin-left: 15%;
-	text-align: center;
 	float: left;
-	width: 495px;
-	background: #b300b3;
+	/*495px=399+48+48*/
+	width: 495px;	
+	/*padding-left: 48px;
+	padding-right: 48px;*/
+	height: 780px;
+	background: #ffffff;
 }
 aside {
-	margin-right: 15%;
 	text-align: center;
 	float: right;
-	width: 460px;
-	background: #b399b3;
+	width: 441px;
+	height: 600px;
+	background: #ffffff;
+	border-color: #dddddd;
+	overflow: auto;
 }
 h1 {
-	
-}
-h2 {
-
-}
-h3 {
-
+	text-align: center;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	color: teal;
+	/*reset file sets margin to 0 for h1, but chrome doesn't display margin of 0*/
+	margin: 0;
+	padding: 48px;
 }
 p {
-		
+	/*480px=384+48+48*/
+	width: 384px;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	border-top: 1px;
+	border-top-color: #dddddd;
+	text-align: left;
+	overflow: auto;
+}
+p.section {
+	/*495px=399+48+48*/
+	width: 399px;
+	padding-left: 48px;
+	padding-right: 48px;
+	/*reset file sets margin to 0 for h1, but chrome doesn't display margin of 0*/
+	border-top: 1px;
+	border-top-color: #dddddd;
+	margin: 0;
+}
+p.aside {
+	/*441px=345+48+48*/
+	width: 345px;
+	padding-left: 48px;
+	padding-right: 48px;
 }
 footer {
+	color: #ebebeb;
+	text-align: center;
+	background: #777777;
+	width: 960px;
+	position: fixed;
+}
+#page-wrap {
+  min-height: 100%;
+  margin-bottom: -96px;
+  position: relative; 
+}
+#page-wrap:after {
+  content: "";
+  display: block;
+}
+#site-footer, #page-wrap:after {
+  height: 96px; 
+}
+#site-footer {
+  position: absolute;
+}
+/*#article {
 
-}
-footer.clear {
-	clear: both;
-}
-#article {
-	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/b2/b8/36/b2b83698835aa97555bf91380c1603c8.jpg");
-	background-image-size: 100%;
-	background-repeat: repeat-y;
-}
+}*/
